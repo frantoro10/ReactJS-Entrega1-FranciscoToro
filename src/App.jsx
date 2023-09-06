@@ -1,19 +1,19 @@
+
+// Librerias - React
+import React from "react";
 //Components
-import NavBarComponent from "../NavBarComponent/NavBar";
-
-
-//Styles
+import MainRouter from "./routes/MainRouter";
+import MainLayout from "./layout/MainLayout";
+// Styles
 import styles from "./App.module.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-const App = () => {
+
+const App  = () => {
   return (
-    <div className={styles.appContainer}>
-      <nav className={styles.navContainer}>
-        <NavBarComponent />
-      </nav>
-      <footer className={styles.footerContainer}>Footer</footer>
-    </div>
+    <MainLayout>
+      <MainRouter/>
+    </MainLayout>
+    
   );
 };
 
